@@ -1,5 +1,4 @@
-
-def bolunensayibulma(min_sayi , max_sayi , bolunecek_sayi):
+def bolunenSayiBulma(min_sayi , max_sayi , bolunecek_sayi):
     sayilar = []
     toplam = 0
     for x in range(min_sayi, max_sayi):
@@ -9,8 +8,7 @@ def bolunensayibulma(min_sayi , max_sayi , bolunecek_sayi):
 
     lenght = len(sayilar)
 
-    print("dizinin uzunluğu :" + str(lenght))
+    return ("dizinin uzunluğu :" + str(lenght))
 
 
-bolunensayibulma(2, 6, 4)
-
+print(bolunenSayiBulma(2, 6, 4))
