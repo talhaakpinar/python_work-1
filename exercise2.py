@@ -1,11 +1,12 @@
 birler = ["", "bir", "iki", "uc", "dort", "bes", "altı", "yedi", "sekiz", "dokuz"]
 onlar = ["", "on", "yirmi", "otuz", "kırk"," elli", "altmıs", "yetmis", "seksen", "doksan"]
 
-def okunus(sayı):
-    birinci = sayı % 10
-    ikinci = sayı // 10
-    return onlar[ikinci] + " " + birler[birinci]
+def okunus(sayi):
+    if (sayi >= 1 and sayi <= 99):
+        birinci = sayi % 10
+        ikinci = sayi // 10
+        print("Sayi: " + onlar[ikinci] + " " + birler[birinci])
+    else:
+        print("Lütfen ondalıklı bir sayı giriniz")
 
-sayı =  int(input("Sayı:"))
-
-print(okunus(sayı))
+okunus(int(input("Sayı:")))
